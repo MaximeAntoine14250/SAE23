@@ -1,0 +1,177 @@
+:root {
+  --color-primary: #cce5ff; /* bleu très clair */
+  --color-secondary: #5590cc; /* bleu foncé */
+  --color-font: #ffffff;
+  --color-shadow: #0e061c;
+  --color-accent: #0077e6; /* pour les hover */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 1280px;
+  background: linear-gradient(to right, #cce5ff, #3399ff);
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--color-secondary);
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 15px;
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--color-font);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+#cityForm {
+  text-align: center;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cityForm_form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cityForm_form input,
+#cityForm_form select {
+  min-width: 280px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary);
+  margin-top: 10px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#validationButton {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-font);
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#validationButton:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-font);
+  color: var(--color-font);
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#communeSelect {
+  display: none;
+  margin-top: 10px;
+  padding: 5px;
+  z-index: 999;
+}
+
+#code-postal {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#weatherInformation {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#weatherInformation div {
+  text-align: center;
+  min-height: 60px;
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: var(--color-secondary);
+  color: var(--color-font);
+  border-radius: 8px;
+  width: calc(33% - 10px);
+}
+
+.reloadButton {
+  width: 280px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: var(--color-font);
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reloadButton:hover {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-font);
+  color: var(--color-font);
+}
+
+/* ------------------- MEDIA QUERIES ----------------------- */
+
+@media screen and (max-width: 1024px) {
+  #weatherInformation div {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #cityForm {
+    width: 95%;
+    margin: 8px auto;
+  }
+}
