@@ -19,14 +19,16 @@
     ></script>
     <script defer src="./js/weatherCard.js"></script>
     <script defer src="./js/app.js"></script>
-    <title>MétéoZen</title>
+    <title>Instant Weather</title>
   </head>
   <body>
     <header>
-      <h1>MétéoZen</h1>
-      <h2>Réalisé par : Maxime ANTOINE</h2>
-      <p>Votre météo locale, simple et rapide </p>
-      <p>Obtenez les prévisions immédiates de votre commune</p>
+      <h1>INSTANT WEATHER</h1>
+      <p>Votre météo en un clic</p>
+      <p>Choisissez votre commune et consultez les prévisions du jour</p>
+      <button id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
     </header>
     <main>
       <section id="cityForm">
@@ -44,11 +46,46 @@
             >Sélectionnez la commune</label
           >
           <select id="communeSelect"></select>
+          
+          <label for="days-selector">Nombre de jours de prévisions</label>
+          <div class="days-selector" id="days-selector">
+            <button type="button" class="day-button active" data-days="1">1</button>
+            <button type="button" class="day-button" data-days="2">2</button>
+            <button type="button" class="day-button" data-days="3">3</button>
+            <button type="button" class="day-button" data-days="4">4</button>
+            <button type="button" class="day-button" data-days="5">5</button>
+            <button type="button" class="day-button" data-days="6">6</button>
+            <button type="button" class="day-button" data-days="7">7</button>
+          </div>
+          
+          <label>Informations supplémentaires</label>
+          <div class="checkboxes-container">
+            <div class="checkbox-item">
+              <input type="checkbox" id="show-lat" name="show-lat">
+              <label for="show-lat">Latitude</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="show-lon" name="show-lon">
+              <label for="show-lon">Longitude</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="show-rain" name="show-rain">
+              <label for="show-rain">Cumul de pluie (mm)</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="show-wind" name="show-wind">
+              <label for="show-wind">Vent moyen (km/h)</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="show-wind-dir" name="show-wind-dir">
+              <label for="show-wind-dir">Direction du vent (°)</label>
+            </div>
+          </div>
         </form>
         <button id="validationButton">Valider</button>
       </section>
       <section id="weatherInformation">
-        <!-- Ajouter les informations météo ici -->
+        <!-- Les informations météo seront ajoutées dynamiquement ici -->
       </section>
     </main>
   </body>
