@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #2389b8;
-  --color-gradient: linear-gradient(135deg, #2389b8, #2c4b7c);
-  --color-secondary: #1a365d;
+  --color-primary: #48cee6;
+  --color-gradient: linear-gradient(135deg, #2389b8, #254f92);
+  --color-secondary: #2d5997;
   --color-font: #ffffff;
   --color-bg: #eef8fc;
   --color-text: #333333;
@@ -10,12 +10,14 @@
 }
 
 .dark-mode {
-  --color-primary: #1c3654;
-  --color-gradient: linear-gradient(135deg, #1c3654, #0f203a);
-  --color-secondary: #344b68;
+  --color-primary: #000000;
+  --color-gradient: linear-gradient(135deg, #2d4a69, #020d1f);
+  --color-secondary: #30455e;
   --color-font: #f5fcfc;
-  --color-bg: #121b29;
-  --color-text: #f5f5f5;
+  --color-bg: #243650;
+  --color-text: #ffffff;
+  --color-text-coordo: #2d4a69;
+  --color-text-l-L: #2d4a69;
   --color-border: #555555;
   --card-bg-light: rgba(255, 255, 255, 0.1);
 }
@@ -33,7 +35,7 @@ body {
   background-color: var(--color-bg);
   font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
-  color: var(--color-text);
+  color: var(--color-text-l-L);
   position: relative;
 }
 
@@ -114,7 +116,7 @@ h1 {
 
 #cityForm_form label {
   margin-top: 20px;
-  color: var(--color-text);
+  color: var(--color-text-coordo);
   font-weight: 500;
 }
 

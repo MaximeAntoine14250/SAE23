@@ -35,6 +35,7 @@ function createWeatherCards(data, days, communeName, latitude, longitude, select
     const forecast = data.forecast[i];
     const date = new Date(forecast.datetime);
     
+
     // Créer un container pour ce jour
     const dayContainer = document.createElement("div");
     dayContainer.className = "weather-day";
@@ -99,6 +100,7 @@ function createWeatherCards(data, days, communeName, latitude, longitude, select
     weatherCard.appendChild(infoGrid);
     dayContainer.appendChild(weatherCard);
     weatherSection.appendChild(dayContainer);
+    
   }
   
   // Ajouter un bouton de retour vers le formulaire

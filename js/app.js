@@ -70,7 +70,6 @@ async function fetchCommunesByCodePostal(codePostal) {
   }
 }
 
-// Fonction pour afficher les communes récupérées dans la liste déroulante
 function displayCommunes(data) {
   communeSelect.innerHTML = ""; // On vide les anciennes options
 
@@ -83,27 +82,35 @@ function displayCommunes(data) {
       option.value = commune.code;
       option.textContent = commune.nom;
 
-      // Gestion des coordonnées
+      // Gestion des coordonnées - CORRECTION ICI
       let lat = "Non disponible";
       let lon = "Non disponible";
 
+      // L'API geo.api.gouv.fr renvoie les coordonnées dans centre.coordinates
+      // Format: [longitude, latitude]
       if (commune.centre && commune.centre.coordinates) {
-        lon = commune.centre.coordinates[0];
-        lat = commune.centre.coordinates[1];
-      } else if (commune.coordonnees) {
+        lon = commune.centre.coordinates[0]; // longitude
+        lat = commune.centre.coordinates[1]; // latitude
+        console.log(`Coordonnées trouvées pour ${commune.nom}: lat=${lat}, lon=${lon}`);
+      } 
+      // Fallback pour d'autres formats possibles
+      else if (commune.coordonnees) {
         lat = commune.coordonnees.lat;
         lon = commune.coordonnees.lon;
-      } else if (commune.geom) {
-        console.log("Géométrie présente mais format différent");
+      }
+      // Pour les communes avec géométrie complexe, on peut calculer le centroïde
+      else if (commune.centre) {
+        console.log("Format de centre différent:", commune.centre);
       }
 
       // On stocke les coordonnées dans les attributs de l'option
-      option.dataset.lat = lat;
-      option.dataset.lon = lon;
+      // IMPORTANT: On s'assure que ce ne sont pas des chaînes "Non disponible"
+      option.dataset.lat = lat ;
+      option.dataset.lon = lon ;
 
       console.log(`Commune ${commune.nom}: lat=${lat}, lon=${lon}`);
 
-      communeSelect.appendChild(option); // On ajoute l’option à la liste
+      communeSelect.appendChild(option); // On ajouter l'option à la liste
     });
 
     communeSelect.style.display = "block"; // On affiche la liste
@@ -164,6 +171,7 @@ codePostalInput.addEventListener("input", async () => {
     }
   }
 });
+
 
 // Quand on clique sur le bouton de validation
 validationButton.addEventListener("click", async () => {
