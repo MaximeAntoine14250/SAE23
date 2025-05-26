@@ -58,5 +58,5 @@ Charte graphique moderne et cohérente
 ### 🌐 Lien du projet
 Lien vers le repository GitHub : https://github.com/MaximeAntoine14250/SAE23.git
 
-Lien vers la version en ligne (GitHub Pages) : https://nom-utilisateur.github.io/instant-weather-v2/
+Lien vers la version en ligne (GitHub Pages) : https://maximeantoine14250.github.io/SAE23/
 
