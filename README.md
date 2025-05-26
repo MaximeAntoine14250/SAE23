@@ -19,6 +19,7 @@ Versionnage : Git & GitHub (repository public)
 API utilisée :
 
 API de découpage administratif par commune : https://geo.api.gouv.fr/decoupage-administratif/communes
+
 API météo de MétéoConcept : https://api.meteo-concept.com/
 
 ### 🎯 Objectifs pédagogiques
