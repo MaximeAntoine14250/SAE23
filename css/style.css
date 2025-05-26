@@ -1,25 +1,23 @@
 :root {
-  --color-primary: #48cee6;
-  --color-gradient: linear-gradient(135deg, #2389b8, #254f92);
-  --color-secondary: #2d5997;
-  --color-font: #ffffff;
+  --color-primary: #1CB5E0;
+  --color-gradient: linear-gradient(135deg, #1CB5E0, #1DE9B6);
+  --color-secondary: #4fcfaf;
+  --color-font: #ECFEFF;
   --color-bg: #eef8fc;
-  --color-text: #333333;
+  --color-text: #123B3E;
   --color-border: #cccccc;
   --card-bg-light: rgba(255, 255, 255, 0.2);
 }
 
 .dark-mode {
-  --color-primary: #000000;
-  --color-gradient: linear-gradient(135deg, #2d4a69, #020d1f);
-  --color-secondary: #30455e;
-  --color-font: #f5fcfc;
-  --color-bg: #243650;
-  --color-text: #ffffff;
-  --color-text-coordo: #2d4a69;
-  --color-text-l-L: #2d4a69;
-  --color-border: #555555;
-  --card-bg-light: rgba(255, 255, 255, 0.1);
+  --color-primary: #000000; /* Violet foncé profond */
+  --color-gradient: linear-gradient(135deg, #0d0d1f, #2a1857, #451b85, #1d0c0c);
+  --color-secondary: #47275a; /* Violet soutenu */
+  --color-font: #e0d8f6;      /* Texte clair mais doux */
+  --color-bg: #434358;        /* Fond presque noir, légèrement violacé */
+  --color-text: #c2b8e3;      /* Texte secondaire doux */
+  --color-border: #3d2d5c;    /* Pour contours et séparations */
+  --card-bg-light: rgba(255, 255, 255, 0.05); /* Transparence subtile */
 }
 
 * {
