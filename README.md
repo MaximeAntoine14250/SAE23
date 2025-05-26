@@ -1,20 +1,29 @@
 # 🌦️ Instant Weather V2 – Projet Individuel JavaScript
 
-Auteur : ANTOINE Maxime 
+#### Auteur : ANTOINE Maxime 
+
 Projet réalisé dans le cadre de la formation SAE203 – BUT Réseaux et Télécommunications
 
 ### 🔍 Présentation du projet
 Instant Weather V2 est une application web responsive permettant d’afficher les prévisions météorologiques d'une commune en France. 
-Cette nouvelle version enrichit la V1 avec des fonctionnalités supplémentaires comme la sélection du nombre de jours, le choix d’attributs météo complémentaires, ainsi qu'une fonctionnalité innovante choisie par le développeur.
 
-### 🛠️ Socle technique
+Dans cette version, de nouvelles fonctionnalités sont impléméntées comme la sélection du nombre de jours, le choix d’attributs météo complémentaires, ainsi que la posibilitée de choisir un mode sombre.
+
+### 🛠️ Outils technique
 Langages : HTML, CSS, JavaScript
 
 Environnement de développement : Visual Studio Code
 
 Versionnage : Git & GitHub (repository public)
 
-API utilisée : Météo Concept
+API utilisée :
+
+• API de découpage administratif par commune : https://geo.api.gouv.fr/decoupage-administratif/communes
+
+• API météo de MétéoConcept : https://api.meteo-concept.com/
+
+
+
 
 ### 🎯 Objectifs pédagogiques
 Utiliser une API publique selon sa documentation officielle
