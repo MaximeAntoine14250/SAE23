@@ -5,7 +5,7 @@
 Projet réalisé dans le cadre de la formation SAE203 – BUT Réseaux et Télécommunications
 
 ### 🔍 Présentation du projet
-Instant Weather V2 est une application web responsive permettant d’afficher les prévisions météorologiques d'une commune en France. 
+Instant Weather V2 est une application web responsive permettant d’afficher les prévisions météorologiques d'une commune en France.
 
 Dans cette version, de nouvelles fonctionnalités sont impléméntées comme la sélection du nombre de jours, le choix d’attributs météo complémentaires, ainsi que la posibilitée de choisir un mode sombre.
 
@@ -16,7 +16,7 @@ Environnement de développement : Visual Studio Code
 
 Versionnage : Git & GitHub (repository public)
 
-API utilisée :
+APIs utilisées :
 
 API de découpage administratif par commune : https://geo.api.gouv.fr/decoupage-administratif/communes
 
