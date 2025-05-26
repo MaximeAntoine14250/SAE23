@@ -1,4 +1,4 @@
-🌦️ Instant Weather V2 – Projet Individuel JavaScript
+# 🌦️ Instant Weather V2 – Projet Individuel JavaScript
 Auteur : ANTOINE Maxime 
 Projet réalisé dans le cadre de la formation SAE203 – BUT Réseaux et Télécommunications
 
