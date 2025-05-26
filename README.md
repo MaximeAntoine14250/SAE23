@@ -3,7 +3,8 @@ Auteur : ANTOINE Maxime
 Projet réalisé dans le cadre de la formation SAE203 – BUT Réseaux et Télécommunications
 
 🔍 Présentation du projet
-Instant Weather V2 est une application web responsive permettant d’afficher les prévisions météorologiques d'une commune en France. Cette nouvelle version enrichit la V1 avec des fonctionnalités supplémentaires comme la sélection du nombre de jours, le choix d’attributs météo complémentaires, ainsi qu'une fonctionnalité innovante choisie par le développeur.
+Instant Weather V2 est une application web responsive permettant d’afficher les prévisions météorologiques d'une commune en France. 
+Cette nouvelle version enrichit la V1 avec des fonctionnalités supplémentaires comme la sélection du nombre de jours, le choix d’attributs météo complémentaires, ainsi qu'une fonctionnalité innovante choisie par le développeur.
 
 🛠️ Socle technique
 Langages : HTML, CSS, JavaScript
