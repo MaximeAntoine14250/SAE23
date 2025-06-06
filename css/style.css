@@ -93,6 +93,13 @@ header p {
   font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
+#cityForm_form legend {
+  color: var(--color-text-2);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
 #darkModeToggle {
   position: absolute;
   top: 1.5rem;
